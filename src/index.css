@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-clay: #37463D;
+  --color-sand: #E3CD8B;
+  --color-sage: #5D7052;
+  --color-ochre: #C18845;
+  --color-amber: #F0BE86;
+  --color-warmbg: #37463D;
+  --color-warmcard: #5D7052;
+}
+
+body {
+  background-color: var(--color-warmbg);
+  color: var(--color-amber);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom gorgeous scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-clay);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ochre);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.neon-border-gold {
+  box-shadow: 0 0 15px rgba(193, 136, 69, 0.2);
+}
+
+.canvas-game-container {
+  aspect-ratio: 4 / 3;
+  image-rendering: pixelated;
+}
