@@ -9,7 +9,7 @@ export const PORTFOLIO_OWNER = {
   linkedin: "https://www.linkedin.com/in/mazhoud-fatma-7554b41b0/",
   github: "https://github.com/DoubleFace5",
   avatarUrl: "/src/assets/images/fatma_avatar_1779810990652.png",
-  bio: "A highly creative and passionate developer specializing in mobile app development, robust full-stack systems, relational databases, and dynamic motion design. I thrive on translating compl[...]
+  bio: "A highly creative and passionate developer specializing in mobile app development, robust full-stack systems, relational databases, and dynamic motion design. I thrive on translating complex concepts into delightful user experiences, blending engineering with aesthetics.",
 };
 
 export const SKILLS: Skill[] = [
