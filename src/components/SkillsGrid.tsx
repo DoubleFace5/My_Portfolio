@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 import { SKILLS } from "../data";
 import { Skill } from "../types";
 import { 
@@ -108,11 +109,30 @@ export default function SkillsGrid({ onSelectSkillForChat }: SkillsGridProps) {
         </div>
 
         {/* Dynamic Interactive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid-wrapper">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          id="skills-grid-wrapper"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+        >
           {filteredSkills.map((skill, index) => (
-            <div
+            <motion.div
               key={skill.name}
               onClick={() => onSelectSkillForChat(skill.name)}
+              variants={{
+                hidden: { y: 20, opacity: 0 },
+                visible: { y: 0, opacity: 1 }
+              }}
               className="bg-[#37463D]/80 rounded-3xl p-6 border border-ochre/25 hover:border-sand/60 cursor-pointer shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
               id={`skill-card-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
@@ -162,7 +182,7 @@ export default function SkillsGrid({ onSelectSkillForChat }: SkillsGridProps) {
                   Ask AI
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
 
           {filteredSkills.length === 0 && (
@@ -176,7 +196,7 @@ export default function SkillsGrid({ onSelectSkillForChat }: SkillsGridProps) {
               </button>
             </div>
           )}
-        </div>
+        </motion.div>
 
       </div>
     </section>
