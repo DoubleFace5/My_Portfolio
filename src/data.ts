@@ -1,4 +1,6 @@
 import { Skill, Education, Project } from "./types";
+import oucemaVideo from "./assets/videos/oucemas_portfolio.mp4";
+import retroArcadeVideo from "./assets/videos/retro_arcade.mp4";
 
 export const PORTFOLIO_OWNER = {
   name: "Fatma Mazhoud",
@@ -181,13 +183,13 @@ export const PROJECTS: Project[] = [
     title: "Personal & Freelance Portfolios",
     description: "Dynamic and responsive portfolio websites designed for various clients and personal use, showcasing projects and skills with modern web technologies.",
     technologies: ["React", "Vite", "TypeScript", "Tailwind", "Vercel"],
-    videoUrl: "/assets/videos/oucema's_portfolio.mp4",
+    videoUrl: oucemaVideo,
   },
   {
     title: "Retro Arcade Site",
     description: "A nostalgic web-based gaming hub featuring classic arcade games implemented with HTML5 Canvas and a custom backend.",
     technologies: ["HTML5 Canvas", "PHP", "SQL"],
-    videoUrl: "/assets/videos/retro_arcade.mp4",
+    videoUrl: retroArcadeVideo,
   },
   {
     title: "Power BI Dashboards",
