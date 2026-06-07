@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SkillsGrid from "./components/SkillsGrid";
 import EducationTimeline from "./components/EducationTimeline";
+import Projects from "./components/Projects";
 import GameStation from "./components/GameStation";
 import AiChatbot from "./components/AiChatbot";
 import { Github, Linkedin, Mail, Heart, Calendar, ArrowUp } from "lucide-react";
@@ -17,7 +18,7 @@ export default function App() {
   // Scroll handler to track active section for header
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "skills", "education", "arcade", "ai-assistant"];
+      const sections = ["about", "skills", "education", "projects", "arcade", "ai-assistant"];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -70,6 +71,9 @@ export default function App() {
 
         {/* Education Milestone Timeline */}
         <EducationTimeline />
+
+        {/* New Projects Showcase */}
+        <Projects />
 
         {/* Vintage HTML5 Canvas Dual Game Arcade Hub */}
         <GameStation />
@@ -157,6 +161,13 @@ export default function App() {
               id="footer-link-education"
             >
               ACADEMIC TIMELINE
+            </button>
+            <button
+              onClick={() => handleScrollToSection("projects")}
+              className="hover:text-warmbg tracking-wide text-left md:text-right"
+              id="footer-link-projects"
+            >
+              PROJECTS WORKSPACE
             </button>
             <button
               onClick={() => handleScrollToSection("arcade")}

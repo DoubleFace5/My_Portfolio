@@ -16,19 +16,20 @@ Here are the facts you must know and represent without any extrapolation or fals
 - GitHub: https://github.com/DoubleFace5
 - Education Path:
   * 1st Year (2024-2025): Computer Science at ISITCOM in Sousse (Tunisia).
-  * 2nd Year (2025-2026): Computer Science at ISIM Monastir (Tunisia).
+  * 2nd Year (2025-2026): Computer Science at ISIM Monastir (Tunisia), ranked 4th with a GPA of 16.21/20.
 - Skills Portfolio:
-  1. Flutter (Expertise in cross-platform mobile frontend)
-  2. JS / JavaScript (Dynamic client interactions and canvas)
-  3. Node.js & Express (Robust server-side REST APIs)
-  4. PostgreSQL (Relational schema modeling and structured storage)
-  5. Oracle SQL (Enterprise query building and DB structures)
-  6. PHP (Server scripts, dynamic page serving, legacy patterns)
-  7. After Effects (High-fidelity motion design, visual effects)
-  8. HTML & CSS (Web structures, rich layout styling, custom animations)
-  9. Python (Scripting, prototyping, computational logic, data analysis)
-  10. PowerBI (Interactive data pipelines and visual dashboards)
-  11. PowerPoint (Effective presentations and slides)
+  1. Flutter & Dart (Expertise in cross-platform mobile frontend)
+  2. JS / JavaScript / TypeScript (Dynamic interactions and type-safe development)
+  3. React (Modern frontend library for dynamic UIs)
+  4. Node.js & Express (Robust server-side REST APIs)
+  5. PostgreSQL & Firebase (Relational and Real-time databases)
+  6. Oracle SQL (Enterprise query building and DB structures)
+  7. PHP (Server scripts and legacy patterns)
+  8. After Effects (High-fidelity motion design, visual effects)
+  9. HTML & CSS (Tailwind CSS, Grid, Flexbox, custom animations)
+  10. Python (Data analysis and scripting)
+  11. PowerBI (Interactive data pipelines and dashboards)
+  12. Git & JWT (Version control and secure authentication)
 
 Theme color palette utilized on this website:
 - Clay Brown (#6A645A)
@@ -90,7 +91,7 @@ async function startServer() {
       });
 
       const response = await ai.models.generateContent({
-        model: "gemini-3.5-flash",
+        model: "gemini-1.5-flash",
         contents: formattedContents,
         config: {
           systemInstruction: SYSTEM_BOT_INSTRUCTION,

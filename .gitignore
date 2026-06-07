@@ -1,1 +1,7 @@
--e "node_modules/\ndist/\n.env\n.DS_Store\n*.local" 
+node_modules/
+dist/
+.env
+.DS_Store
+*.local
+server.log
+server_debug.log

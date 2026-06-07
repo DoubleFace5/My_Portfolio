@@ -1,4 +1,4 @@
-import { Skill, Education } from "./types";
+import { Skill, Education, Project } from "./types";
 
 export const PORTFOLIO_OWNER = {
   name: "Fatma Mazhoud",
@@ -17,6 +17,27 @@ export const SKILLS: Skill[] = [
     level: 5,
     iconName: "Smartphone",
     description: "Cross-platform mobile engineering with elegant, highly responsive visual layouts.",
+  },
+  {
+    name: "Dart",
+    category: "frontend",
+    level: 5,
+    iconName: "Code2",
+    description: "Strongly typed language for high-performance apps, primarily used with Flutter.",
+  },
+  {
+    name: "React",
+    category: "frontend",
+    level: 4,
+    iconName: "Layout",
+    description: "Building dynamic, component-based user interfaces with modern React hooks.",
+  },
+  {
+    name: "TypeScript",
+    category: "frontend",
+    level: 4,
+    iconName: "FileJson",
+    description: "Typed superset of JavaScript for scalable and maintainable web applications.",
   },
   {
     name: "JavaScript",
@@ -38,6 +59,13 @@ export const SKILLS: Skill[] = [
     level: 4,
     iconName: "Database",
     description: "Advanced relational modeling, complex SQL operations, index optimization, and persistence.",
+  },
+  {
+    name: "Firebase",
+    category: "database",
+    level: 4,
+    iconName: "Database",
+    description: "Real-time NoSQL databases, authentication, and cloud functions for rapid app development.",
   },
   {
     name: "Oracle SQL",
@@ -68,11 +96,25 @@ export const SKILLS: Skill[] = [
     description: "Semantic structures, custom CSS keyframe animations, Canvas API, and modern layout systems like Grid and Flexbox.",
   },
   {
+    name: "Tailwind CSS",
+    category: "frontend",
+    level: 5,
+    iconName: "Layout",
+    description: "Utility-first CSS framework for rapid UI development and consistent design systems.",
+  },
+  {
     name: "Python",
     category: "backend",
     level: 4,
     iconName: "Binary",
     description: "Data processing, automated scripts, backend service support, and quick algorithmic solutions.",
+  },
+  {
+    name: "JWT",
+    category: "backend",
+    level: 4,
+    iconName: "ShieldCheck",
+    description: "Secure token-based authentication for modern web and mobile applications.",
   },
   {
     name: "PowerBI",
@@ -87,6 +129,13 @@ export const SKILLS: Skill[] = [
     level: 5,
     iconName: "Presentation",
     description: "Impactful visual presentations, custom deck design, and high-converting storytelling flows.",
+  },
+  {
+    name: "Git",
+    category: "other",
+    level: 4,
+    iconName: "Github",
+    description: "Version control, branching strategies, and collaborative development workflows.",
   },
 ];
 
@@ -108,10 +157,41 @@ export const EDUCATION: Education[] = [
     location: "Monastir, Tunisia",
     degree: "Computer Science - Year 2",
     details: [
+      "Ranked 4th in her class with a GPA of 16.21/20.",
       "Advanced full-stack architectures, Node.js applications, and mobile engineering with Flutter.",
       "Deeper dive into relational database engine optimizations (PostgreSQL and Oracle SQL).",
       "Software lifecycle control, responsive interfaces, and advanced visual styling methodologies.",
     ],
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "ISIMM Student Portal",
+    description: "A comprehensive platform for ISIMM students to access academic resources, schedules, and administrative services. Ongoing development focused on seamless user experience.",
+    technologies: ["Flutter", "Node.js", "PostgreSQL", "JWT"],
+  },
+  {
+    title: "TABIBI Medical App",
+    description: "Innovative healthcare solution connecting patients with medical professionals. Built with a focus on real-time data and accessibility.",
+    technologies: ["Flutter", "Firebase"],
+    linkedinUrl: "https://www.linkedin.com/in/tabibi-isimm-369200406/",
+  },
+  {
+    title: "Personal & Freelance Portfolios",
+    description: "Dynamic and responsive portfolio websites designed for various clients and personal use, showcasing projects and skills with modern web technologies.",
+    technologies: ["React", "Vite", "TypeScript", "Tailwind", "Vercel"],
+  },
+  {
+    title: "Retro Arcade Site",
+    description: "A nostalgic web-based gaming hub featuring classic arcade games implemented with HTML5 Canvas and a custom backend.",
+    technologies: ["HTML5 Canvas", "PHP", "SQL"],
+    videoUrl: "/src/assets/videos/retro_arcade.mp4",
+  },
+  {
+    title: "Power BI Dashboards",
+    description: "Interactive data visualization dashboards providing deep insights through advanced DAX modeling and structured SQL data sources.",
+    technologies: ["Power BI", "DAX", "SQL"],
   },
 ];
 

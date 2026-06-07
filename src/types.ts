@@ -14,6 +14,17 @@ export interface Education {
   details: string[];
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl?: string;
+  linkedinUrl?: string;
+  demoUrl?: string;
+  videoUrl?: string;
+  imageUrl?: string;
+}
+
 export interface Message {
   role: "user" | "model";
   text: string;

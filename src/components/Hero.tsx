@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
-import { Sparkles, ArrowRight, Gamepad2, Compass, ShieldCheck } from "lucide-react";
+import { Sparkles, ArrowRight, Gamepad2, Compass, ShieldCheck, Download } from "lucide-react";
 import { PORTFOLIO_OWNER } from "../data";
 import projectImg from "../assets/images/fatma_mazhoud.png";
+import cvFile from "../assets/images/my_CV.pdf";
 
 interface HeroProps {
   onScrollToSection: (sectionId: string) => void;
@@ -80,6 +81,16 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <Gamepad2 className="w-4.5 h-4.5 text-sand group-hover:animate-bounce" />
               <span>Canvas Game Desk</span>
             </button>
+
+            <a
+              href={cvFile}
+              download="Fatma_Mazhoud_CV.pdf"
+              className="bg-clay border border-ochre/40 hover:bg-ochre hover:text-clay text-sand font-extrabold px-6 py-3 rounded-full shadow-md transition-all duration-300 flex items-center gap-2 group cursor-pointer text-xs uppercase tracking-wider"
+              id="hero-btn-cv"
+            >
+              <Download className="w-4 h-4 group-hover:animate-bounce" />
+              <span>Download CV</span>
+            </a>
           </div>
         </motion.div>
 

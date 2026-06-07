@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, Sparkles, Gamepad2, GraduationCap, Code } from "lucide-react";
+import { Github, Linkedin, Mail, Sparkles, Gamepad2, GraduationCap, Code, Layout } from "lucide-react";
 import { PORTFOLIO_OWNER } from "../data";
 
 interface HeaderProps {
@@ -12,6 +12,7 @@ export default function Header({ onScrollToSection, activeSection }: HeaderProps
     { id: "about", label: "About", icon: Code },
     { id: "skills", label: "Skills", icon: Code },
     { id: "education", label: "Education", icon: GraduationCap },
+    { id: "projects", label: "Projects", icon: Layout },
     { id: "arcade", label: "Interactive Arcade", icon: Gamepad2 },
     { id: "ai-assistant", label: "AI Advisor", icon: Sparkles },
   ];
