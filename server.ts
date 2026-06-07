@@ -62,10 +62,10 @@ async function startServer() {
         return;
       }
 
-      const apiKey = process.env.GEMINI_API_KEY;
+      const apiKey = process.env.GEMINI_API_KEY1;
       if (!apiKey) {
         res.status(500).json({
-          error: "GEMINI_API_KEY environment variable is not configured on the server. Please check the Secrets panel in AI Studio.",
+          error: "GEMINI_API_KEY1 environment variable is not configured on the server. Please check the Secrets panel in AI Studio.",
         });
         return;
       }
