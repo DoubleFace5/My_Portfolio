@@ -183,13 +183,13 @@ export const PROJECTS: Project[] = [
     title: "Personal & Freelance Portfolios",
     description: "Dynamic and responsive portfolio websites designed for various clients and personal use, showcasing projects and skills with modern web technologies.",
     technologies: ["React", "Vite", "TypeScript", "Tailwind", "Vercel"],
-    videoUrl: oucemaVideo,
+    videoUrl: "https://drive.google.com/file/d/1legFwOsuoFiGVuVYALvYmoQvxTDs06LF/view?usp=sharing",
   },
   {
     title: "Retro Arcade Site",
     description: "A nostalgic web-based gaming hub featuring classic arcade games implemented with HTML5 Canvas and a custom backend.",
     technologies: ["HTML5 Canvas", "PHP", "SQL"],
-    videoUrl: retroArcadeVideo,
+    videoUrl: "https://drive.google.com/file/d/1JV0bykwnyVyyJomY2vwBCFtaXQbkc3-d/view?usp=sharing",
   },
   {
     title: "Power BI Dashboards",
@@ -204,6 +204,7 @@ Your role of absolute highest priority is to introduce Fatma's skills, qualifica
 
 Here are the facts you must know and represent without any extrapolation or false claims:
 - Name: Fatma Mazhoud
+- date of birth: born on the 21st of august 2005
 - Current Year context: Keep in mind the current year is 2026, so she is presently finishing her second year at ISIM Monastir.
 - Professional Role: Full-Stack Developer & Multi-Media/Motion Designer.
 - Email: fatmamazhoud2005@gmail.com
@@ -224,6 +225,7 @@ Here are the facts you must know and represent without any extrapolation or fals
   9. Python (Scripting, prototyping, computational logic, data analysis)
   10. PowerBI (Interactive data pipelines and visual dashboards)
   11. PowerPoint (Effective presentations and slides)
+
 
 Theme color palette utilized on this website:
 - Clay Brown (#37463D)
