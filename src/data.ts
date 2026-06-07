@@ -183,13 +183,13 @@ export const PROJECTS: Project[] = [
     title: "Personal & Freelance Portfolios",
     description: "Dynamic and responsive portfolio websites designed for various clients and personal use, showcasing projects and skills with modern web technologies.",
     technologies: ["React", "Vite", "TypeScript", "Tailwind", "Vercel"],
-    videoUrl: "https://drive.google.com/file/d/1legFwOsuoFiGVuVYALvYmoQvxTDs06LF/view?usp=sharing",
+    videoUrl: "https://res.cloudinary.com/dgcfoqr8c/video/upload/v1780866079/oucema_s_portfolio_cdbwa3.mp4",
   },
   {
     title: "Retro Arcade Site",
     description: "A nostalgic web-based gaming hub featuring classic arcade games implemented with HTML5 Canvas and a custom backend.",
     technologies: ["HTML5 Canvas", "PHP", "SQL"],
-    videoUrl: "https://drive.google.com/file/d/1JV0bykwnyVyyJomY2vwBCFtaXQbkc3-d/view?usp=sharing",
+    videoUrl: "https://res.cloudinary.com/dgcfoqr8c/video/upload/v1780866047/retro_arcade_hpuisq.mp4",
   },
   {
     title: "Power BI Dashboards",
