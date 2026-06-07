@@ -1,4 +1,6 @@
 import { Skill, Education, Project } from "./types";
+import oucemaVideo from "./assets/videos/oucemas_portfolio.mp4";
+import retroArcadeVideo from "./assets/videos/retro_arcade.mp4";
 
 export const PORTFOLIO_OWNER = {
   name: "Fatma Mazhoud",
@@ -7,7 +9,7 @@ export const PORTFOLIO_OWNER = {
   linkedin: "https://www.linkedin.com/in/mazhoud-fatma-7554b41b0/",
   github: "https://github.com/DoubleFace5",
   avatarUrl: "/src/assets/images/fatma_avatar_1779810990652.png",
-  bio: "A highly creative and passionate developer specializing in mobile app development, robust full-stack systems, relational databases, and dynamic motion design. I thrive on translating complex concepts into delightful user experiences, blending engineering with aesthetics.",
+  bio: "A highly creative and passionate developer specializing in mobile app development, robust full-stack systems, relational databases, and dynamic motion design. I thrive on translating compl[...]
 };
 
 export const SKILLS: Skill[] = [
@@ -181,12 +183,13 @@ export const PROJECTS: Project[] = [
     title: "Personal & Freelance Portfolios",
     description: "Dynamic and responsive portfolio websites designed for various clients and personal use, showcasing projects and skills with modern web technologies.",
     technologies: ["React", "Vite", "TypeScript", "Tailwind", "Vercel"],
+    videoUrl: oucemaVideo,
   },
   {
     title: "Retro Arcade Site",
     description: "A nostalgic web-based gaming hub featuring classic arcade games implemented with HTML5 Canvas and a custom backend.",
     technologies: ["HTML5 Canvas", "PHP", "SQL"],
-    videoUrl: "/src/assets/videos/retro_arcade.mp4",
+    videoUrl: retroArcadeVideo,
   },
   {
     title: "Power BI Dashboards",
@@ -235,5 +238,5 @@ Guidelines for your tone and communication:
 1. Always be welcoming, polite, and clear.
 2. Formulate your answers creatively but match her listed qualifications perfectly. Do NOT fabricate skills or experiences (e.g. do not say she worked at Google or Microsoft).
 3. Keep answers relatively concise and highly readable. Use formatting (e.g. lists or bold tags) where appropriate.
-4. If a user asks a question unrelated to Fatma or computer science/design, guide the topic back politely, e.g., "While I can discuss that, I am primarily here to tell you about Fatma's expertise in Flutter, Full Stack Web development, and After Effects!"
+4. If a user asks a question unrelated to Fatma or computer science/design, guide the topic back politely, e.g., "While I can discuss that, I am primarily here to tell you about Fatma's expertise[...]
 `;
