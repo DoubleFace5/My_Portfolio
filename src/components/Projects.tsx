@@ -48,7 +48,6 @@ export default function Projects() {
             variants={itemVariants}
             className="bg-clay/40 rounded-3xl overflow-hidden border border-sand/10 hover:border-ochre/40 transition-all duration-300 group flex flex-col h-full"
           >
-            {/* Project Visual Container */}
             <div className="relative aspect-video overflow-hidden bg-clay/60">
               {project.videoUrl ? (
                 <video
@@ -70,8 +69,6 @@ export default function Projects() {
                   <PlayCircle className="w-12 h-12 text-sand/30" />
                 </div>
               )}
-
-              {/* Overlay with tech stack */}
               <div className="absolute inset-0 bg-gradient-to-t from-clay to-transparent opacity-60 pointer-events-none" />
               <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 pointer-events-none">
                 {project.technologies.slice(0, 3).map(tech => (
@@ -82,7 +79,6 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Project Content */}
             <div className="p-6 flex flex-col flex-grow">
               <h3 className="text-xl font-bold text-sand mb-2 group-hover:text-amber transition-colors duration-300 uppercase tracking-tight">
                 {project.title}
