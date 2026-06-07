@@ -89,7 +89,7 @@ export default function Projects() {
 
               <div className="flex items-center gap-4 mt-auto pt-4 border-t border-sand/10">
                 {project.githubUrl && (
-                  
+                  <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function Projects() {
                   </a>
                 )}
                 {project.linkedinUrl && (
-                  
+                  <a
                     href={project.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default function Projects() {
                   </a>
                 )}
                 {project.demoUrl && (
-                  
+                  <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
