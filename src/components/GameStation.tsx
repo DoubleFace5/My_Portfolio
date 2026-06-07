@@ -586,7 +586,7 @@ export default function GameStation() {
                 ) : activeGame === "bounce" ? (
                   <p>Steer the baseline paddle left or right to reflect the bouncing ball. Destroy all columns of colored blocks above. Reflecting on centers boosts angles!</p>
                 ) : (
-                  <p>Watch the elegant video walkthrough of Fatma's retro-game website platform, showcasing custom Canvas vectors, arcade game engines, and user dashboards!</p>
+                  <p>Use html canva's to watch a video from ur directory just to test this tool in HTML!</p>
                 )}
               </div>
             </div>
