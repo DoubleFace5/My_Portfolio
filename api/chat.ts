@@ -58,10 +58,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return;
     }
 
-    const apiKey = process.env.GROQ_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY1;
     if (!apiKey) {
       res.status(500).json({
-        error: "GROQ_API_KEY environment variable is not configured. Please add it to Vercel project settings.",
+        error: "GEMINI_API_KEY environment variable is not configured. Please add it to Vercel project settings.",
       });
       return;
     }
@@ -88,9 +88,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (!response.ok) {
       const errData = await response.json();
-      console.error("Groq API Error:", errData);
+      console.error("GEMINI API Error:", errData);
       res.status(500).json({
-        error: "Failed to communicate with the Groq AI service.",
+        error: "Failed to communicate with the GEMINI AI service.",
         details: errData?.error?.message || "Unknown error",
       });
       return;
@@ -101,9 +101,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     res.status(200).json({ reply: text });
 
   } catch (error: any) {
-    console.error("Groq API Error:", error);
+    console.error("Gemini API Error:", error);
     res.status(500).json({
-      error: "Failed to communicate with the Groq AI service.",
+      error: "Failed to communicate with the Gemini AI service.",
       details: error?.message || "Unknown error",
     });
   }
