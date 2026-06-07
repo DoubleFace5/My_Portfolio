@@ -75,11 +75,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return;
     }
 
-    const apiKey = process.env.gemini_API_KEY1;
+    const apiKey = process.env.GEMINI_API_KEY1;
     if (!apiKey) {
       res.status(500).json({
         error:
-          "gemini_API_KEY1 environment variable is not configured. Please add it to Vercel project settings.",
+          "GEMINI_API_KEY1 environment variable is not configured. Please add it to Vercel project settings.",
       });
       return;
     }
