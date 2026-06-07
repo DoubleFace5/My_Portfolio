@@ -53,9 +53,8 @@ export default function Projects() {
               {project.videoUrl ? (
                 <video
                   src={project.videoUrl}
-                  autoPlay
+                  controls
                   muted
-                  loop
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               ) : project.imageUrl ? (
