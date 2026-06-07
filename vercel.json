@@ -1,5 +1,9 @@
 {
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "env": ["gemini_API_KEY1"]
+  "env": {
+    "GEMINI_API_KEY1": {
+      "required": true
+    }
+  }
 }
