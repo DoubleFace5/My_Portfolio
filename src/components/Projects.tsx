@@ -42,7 +42,7 @@ export default function Projects() {
         viewport={{ once: true, margin: "-100px" }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
-        {PROJECTS.map((project, index) => (
+        {PROJECTS.map((project) => (
           <motion.div
             key={project.title}
             variants={itemVariants}
@@ -53,8 +53,10 @@ export default function Projects() {
               {project.videoUrl ? (
                 <video
                   src={project.videoUrl}
-                  controls
+                  autoPlay
                   muted
+                  loop
+                  playsInline
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               ) : project.imageUrl ? (
@@ -64,14 +66,14 @@ export default function Projects() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage/20 to-ochre/20 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage/20 to-ochre/20">
                   <PlayCircle className="w-12 h-12 text-sand/30" />
                 </div>
               )}
 
               {/* Overlay with tech stack */}
-              <div className="absolute inset-0 bg-gradient-to-t from-clay to-transparent opacity-60" />
-              <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
+              <div className="absolute inset-0 bg-gradient-to-t from-clay to-transparent opacity-60 pointer-events-none" />
+              <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 pointer-events-none">
                 {project.technologies.slice(0, 3).map(tech => (
                   <span key={tech} className="px-2 py-0.5 rounded-full bg-ochre/80 text-clay text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">
                     {tech}
@@ -91,7 +93,7 @@ export default function Projects() {
 
               <div className="flex items-center gap-4 mt-auto pt-4 border-t border-sand/10">
                 {project.githubUrl && (
-                  <a
+                  
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -102,7 +104,7 @@ export default function Projects() {
                   </a>
                 )}
                 {project.linkedinUrl && (
-                  <a
+                  
                     href={project.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -113,7 +115,7 @@ export default function Projects() {
                   </a>
                 )}
                 {project.demoUrl && (
-                  <a
+                  
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -124,13 +126,13 @@ export default function Projects() {
                   </a>
                 )}
                 <div className="ml-auto">
-                   <div className="flex flex-wrap gap-1 justify-end">
-                      {project.technologies.length > 3 && (
-                        <span className="text-[10px] text-amber/60 font-mono">
-                          +{project.technologies.length - 3} more
-                        </span>
-                      )}
-                   </div>
+                  <div className="flex flex-wrap gap-1 justify-end">
+                    {project.technologies.length > 3 && (
+                      <span className="text-[10px] text-amber/60 font-mono">
+                        +{project.technologies.length - 3} more
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
